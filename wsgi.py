@@ -30,3 +30,8 @@ def products():
 def product(id):
     product = db.session.query(Product).get(id)
     return product_schema.jsonify(product)
+
+@app.route('/<int:id>')
+def product_html(id):
+    product = db.session.query(Product).get(id)
+    return render_template('product.html', product=product)
