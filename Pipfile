@@ -15,6 +15,7 @@ flask-script = "*"
 flask-marshmallow = "*"
 marshmallow-sqlalchemy = "*"
 flask-restx = "*"
+flask-admin = "*"
 
 [requires]
 python_version = "3.7"
